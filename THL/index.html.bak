@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <title></title>
+	<link rel="stylesheet" type="text/css" 
+href="tyyli.css" />
+<script src="script.js"></script>
+  </head>
+  <body>
+  <h1>Otsikko</h1>
+  
+	  <p>Eka kappale.</p><br /><p>Toinen kappale.</p>
+	  
+	  <h2>Otsikko</h2>
+	  
+	  <script type="text/javascript">
+var teksti = "Moikka maailma!";
+document.write(teksti);
+</script>
+	  
+  </body>
+</html>
+
+
+//Kaikki nettisivulla näkyvä sisältö kirjoitetaan kolmen pisteen paikalle body-elementtiin.
+
+
+
+<a href= "#id"> id-määrite</a>.  (tuohon sisälle linkin http:osoite
+
+Kuva <Järvi src="https://c4.wallpaperflare.com/wallpaper/961/891/647/nature-landscape-summer-lake-forest-grass-wallpapers-for-your-desktop-wallpaper-preview.jpg" />
+Tekstielementtitaulukossa on seuraava esimerkki kuvan upottamisesta:
+
+<img alt="possun kuva (2K)" src="kuvat/possu.GIF" height="100" width="150" />.
+
+Img-elementin sisässä on muutamia tärkeitä määrittelyjä. Ensimmäisenä alt="possun kuva (2K)" ilmaisee, että selain näyttää kuvan paikalla tekstin "possun kuva (2K)", ellei kuvan lataaminen jostain syystä onnistu. Tämä ei ole pakollista, mutta erittäin suositeltavaa.
+
+Määritelmä src="kuvat/possu.gif" on kaikkein tärkein, sillä se ilmoittaa selaimelle, mistä kuva haetaan. Ilman osoitetta ei kuva löydy. Tässä tapauksessa kuvatiedosto possu.gif on kansiossa nimeltä kuvat, joka puolestaan on samassa kansiossa sivun kanssa.
+
+Huomaa, että kansiorakenteessa mennään ylöspäin kahden pisteen + vinoviivan avulla. Esimerkiksi merkkaus ../jokintiedosto viittaa tiedostoon "jokintiedosto", joka on samassa kansiossa, kuin se kansio, jonka sisällä kyseinen HTML-sivu on.
+
+Lista <ul></ul>, <ol></ol>
+Listoja on kaksi erilaista, järjestetty (ol) ja järjestämätön (ul). Järjestetyssä listassa on kohdat numeroitu, kun taas järjestämätön lista toimii ranskalaisten viivojen tyyliin.
+
+Järjestetty lista saadaan aikaan ol-tagien (ordered list) avulla, järjestämätön vastaavasti ul-tageilla (unordered list).
+
+Lisäksi jokainen listan kohta kirjoitetaan omaan elementtiinsä, jotka erotetaan toisistaan li-tageilla. Alla esimerkki kustakin listatyypistä:
+
+Merkkaus	Tulos
+Järjestämätön lista:	
+<ul>
+<li>Ville</li> 
+<li>Kalle</li>
+<li>Polle</li>
+</ul>
+Ville
+Kalle
+Polle
+Järjestetty lista:	
+<ol>
+<li>Ville</li> 
+<li>Kalle</li>
+<li>Polle</li>
+</ol>
+Ville
+Kalle
+Polle
+
+
+Taulukko <table></table>
+Taulukko eli table-elementti koostuu riveistä (tr-elementti, table row), jotka puolestaan koostuvat soluista (td- tai th-elementti, table data/header). Solut ovat muuten samoja, mutta th-elementin sisältöä kohdellaan otsikkona, jolloin se yleensä lihavoidaan ja keskitetaan.
+
+Alla tehdään yksinkertainen taulukko, jossa on kolme riviä ja kolme saraketta. Vertaile koodia ja lopputulosta (värejä on muokattu css-tyylitiedoston avulla, mutta älä kiinnitä siihen nyt liikaa huomiota).
+
+Koodi	Tulos
+<table summary="taulukkoesimerkki1" border="1" 
+cellpadding="5">
+<tr><th>Nimi</th><th>Ikä</th><th>Tykkää</th></tr>
+<tr><td>Kalle</td><td>13</td><td>Tiinasta</td></tr>
+<tr><td>Tiina</td><td>13</td><td>Kallesta</td></tr>
+</table>
+Nimi	Ikä	Tykkää
+Kalle	13	Tiinasta
+Tiina	13	Kallesta
+Lisää esimerkkejä ja selityksiä löydät täältä.
+
