@@ -1,73 +1,143 @@
 <html>
-  <head>
-    <script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Kyselyyn vastattu!";
-}
-</script>
-    <title>Eevan pyöräsivut</title>
-	<link rel="stylesheet" type="text/css" 
-href="tyyli.css" />
-<script src="script.js"></script>
-  </head>
-  <body>
-  <h1>EEVAN PYÖRÄSIVUT</h1>
-	  <p>Tervetuloa Eevan kotisivuille
-    </p><br /><p>Tällä sivustolla löydät tietoa minusta ja pyöristä mitä omistan.</p><br />
-    <p>Halusin tehdä kotisivuilleni vertailun eri pyöristä mitä omistan.</p><br />
-    <p>Pyörät eroavat toisistaan mm. käytettyjen komponenttien suhteen.</p><br />
-    <h2>Pyörätietoa</h2>
 
-<p id="demo">Kysely pyöriin liittyen, osallistu!</p>
+<head>
+  <title>Eevan pyöräsivut</title>
+  <link rel="stylesheet" type="text/css" href="tyyli.css" />
+  <script scr='assets/scripts.script.js'></script>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+</head>
 
+<body>
 
-    <br />
-
-    <p>
-      Lempipyörämerkkini:	
-<ol>
-<li>Corrratec</li> 
-<li>TREK</li>
-<li>Active Lane</li>
- <li>Cannondale</li>
-</ol>
-    </p>
-  <button id="btn">Click me</button>
-  <h2>Demo JavaScript in Body</h2>
-
-<p id="demo">A Paragraph.</p>
-
-<button type="button" onclick="myFunction()">Try it</button>
-
-  <p>
-   
-    <table summary="taulukkoesimerkki1" border="1" 
-cellpadding="5">
-      <tr><th>Merkki</th><th>Vaihteisto</th><th>Jarrut</th><th>Käyttövoima</th><th>Malli</th><th>Renkaiden (tuuma-)koko</th></tr>
-<tr><td>Active Lane</td><td>Shimano</td><td>Levyjarrut</td><td>Sähkö</td><td>Hybridi</td><td>28", 47-622</td></tr>
-<tr><td>Corratec</td><td>1Shimano</td><td>Hydrauliset jarrut</td><td>Luomu</td><td>Maastopyörä</td><td>29", 54-622</td></tr>
-      </table>
-  </p>
-	  
-	  <h2>Kuvia pyöristäni</h2>
-	  Kuva <Järvi src="https://c4.wallpaperflare.com/wallpaper/961/891/647/nature-landscape-summer-lake-forest-grass-wallpapers-for-your-desktop-wallpaper-preview.jpg" />
-<img alt="Corratec" src="https://images.immediate.co.uk/production/volatile/sites/21/2019/03/1239810509737-49t2twxgoj2v-ab1a311.jpg?quality=90&resize=729%2C487" height="100" width="150" />.
-
-JOKU KYSELY/LOMAKE OMASTA PYÖRÄSTÄ FORM SUBMIT TEE TÄSTÄ AVOIN RAJAPINTA EVENT JOHONKI JUTTUUN, elikäyttäjä antaa jonku tiedon johon vastataan
-myös kellonaika tähän
-
-	  <script type="text/javascript">
-var teksti = "Kiitos käynnistä!";
-document.write(teksti);
-</script>
-	  
-  <p>
-      <a href= "#id"> Tämä on joku linkki.</a>.
-    </p>
-
-<script scr ='assets/scripts.script.js'></script>
-  </body>
 </html>
+<h1>EEVAN PYÖRÄSIVUT</h1><br />
+<p>Tervetuloa Eevan kotisivuille
+</p>
+<article>
+  Tällä sivustolla löydät tietoa minusta ja pyöristäni.
+  Halusin tehdä kotisivuilleni vertailun eri pyöristä mitä omistan.
+  Pyörät eroavat toisistaan mm. käytettyjen komponenttien suhteen. </article>
+<br />
+<h2>Pyörätietoa</h2>
+
+<br />
+<p>
+  Lempipyörämerkkini:
+<ol>
+  <li>Corratec</li>
+  <li>TREK</li>
+  <li>Active Lane</li>
+  <li>Cannondale</li>
+</ol>
+
+<p>Date/Time: <span id="datetime"></span></p>
+
+</p>
+<menu> Sivuvalikko alleviivattuna
+
+  <div class="grid-container">
+    <div class="grid-item">Etusivu</div>
+    <div class="grid-item">Kuvagalleria</div>
+    <div class="grid-item">Kysely</div>
+  </div>
+</menu>
+<h2>Testinappi</h2>
+
+<p id="demo">Joku teksti</p>
+<button type="button" onclick="myFunction2()">Try it</button>
+
+<h2>Demo JavaScript in Body</h2>
+<div class="intro">
+  <p>My name is Donald <span id="Lastname">Duck.</span></p>
+
+  <p id="my-Address">I live in Duckburg</p>
+
+  <p>I have many friends:</p>
+
+</div>
+<p id="demo">A Paragraph.</p>
+<p>
+<form>
+  <input type="button" value="click" onclick="msg()" />
+</form>
+</p>
+<button type="button" onclick="myFunction3()">Try it</button>
 
 
+<p>
 
+<table summary="taulukkoesimerkki1" border="1" cellpadding="5">
+  <tr>
+    <th>Merkki</th>
+    <th>Vaihteisto</th>
+    <th>Jarrut</th>
+    <th>Käyttövoima</th>
+    <th>Malli</th>
+    <th>Renkaiden (tuuma-)koko</th>
+  </tr>
+  <tr>
+    <td>Active Lane</td>
+    <td>Shimano</td>
+    <td>Levyjarrut</td>
+    <td>Sähkö</td>
+    <td>Hybridi</td>
+    <td>28", 47-622</td>
+  </tr>
+  <tr>
+    <td>Corratec</td>
+    <td>Shimano</td>
+    <td>Hydrauliset jarrut</td>
+    <td>Luomu</td>
+    <td>Maastopyörä</td>
+    <td>29", 54-622</td>
+  </tr>
+</table>
+</p>
+
+<aside>
+  <h2>Kuvia pyöristäni</h2>
+  Corratec<br /><br />
+  <Järvi
+    src="https://c4.wallpaperflare.com/wallpaper/961/891/647/nature-landscape-summer-lake-forest-grass-wallpapers-for-your-desktop-wallpaper-preview.jpg" />
+  <img alt="Corratec"
+    src="https://images.immediate.co.uk/production/volatile/sites/21/2019/03/1239810509737-49t2twxgoj2v-ab1a311.jpg?quality=90&resize=729%2C487"
+    height="100" width="150" />. <br />
+</aside>
+
+<p><br />
+  <input type="date" id="newDate" name="newDate"> <br /><br />
+
+  Kysely: Mikä on lempi-pyörämerkkisi?
+<form action="/action_page.php">
+  <input type="radio" id="corratec" name="testi" value="Corratec">
+  <label for="Corratec">Corratec</label><br>
+  <input type="radio" id="Trek" name="testi" value="Trek">
+  <label for="Trek">Trek</label><br>
+  <input type="radio" id="Cannondale" name="testi" value="Cannondale">
+  <label for="Cannondale">Cannondale</label><br><br>
+  <input type="submit" value="Osallistu kyselyyn">
+  //tähän joku linkki mihin kyselyn submit nappi ohjaa eli vaikka 30% on sanonu et trek
+</form>
+element.innerHTML
+Tässä voit katsoa Oulun kaupungin pyöräilyliikenteen häiriötiedotteet:
+<a href="https://www.opendata.fi/data/fi/dataset/oulun-kaupungin-kavely-ja-pyorailyliikenteen-hairiotiedotteet"> Tämä on
+  joku linkki.</a>.
+
+</p>
+
+<footer>
+  <nav>
+    <a href="https://www.cannondale.com/en/">Cannondale</a> |
+    <a
+      href="https://www.corratec.com/">Corratec</a>
+    |
+    <a href="https://www.shimano.com/en/">Shimano</a> |
+    <a
+      href="https://www.trekbikes.com/">Trek</a>
+  </nav>
+
+  <p>Date/Time: DD.MM.YYYY hh:mm <br>
+</footer>
+</body>
+
+</html>
